@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('Deploy') {
       steps {
-        echo "Hello World!"
-        ls -larth /tmp
+        sh '''
+          echo "Hello World!"
+          ls -larth /tmp
+        '''
       }
     }
   }
